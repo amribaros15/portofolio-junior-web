@@ -1,51 +1,59 @@
 # Laporan Lingkungan Pengembangan
+
 ## 1. Spesifikasi Platform
-| Komponen | Nilai |
-|-----------|--------|
-| Sistem Operasi | Windows 11 Pro x64 10.0.26200 N/A Build 26200|
-| RAM | 8,051 MB |
-| Penyimpanan | ±238 GB |
-| Ruang kosong | ±40 GB |
-| Visual Studio Code | 1.142.0 |
-| PHP | 8.2.12 |
-| Apache | 2.4.58 |
-| Node.js | 24.22.0 |
-| npm | 11.19.1 |
-| Composer | 2.10.3 |
-| Git | 2.56.0.windows.2 |
+
+| Komponen           | Nilai                                         |
+| ------------------ | --------------------------------------------- |
+| Sistem Operasi     | Windows 11 Pro x64 10.0.26200 N/A Build 26200 |
+| RAM                | 8,051 MB                                      |
+| Penyimpanan        | ±238 GB                                       |
+| Ruang kosong       | ±40 GB                                        |
+| Visual Studio Code | 1.142.0                                       |
+| PHP                | 8.2.12                                        |
+| Apache             | 2.4.58                                        |
+| Node.js            | 24.22.0                                       |
+| npm                | 11.19.1                                       |
+| Composer           | 2.10.3                                        |
+| Git                | 2.56.0.windows.2                              |
 
 ![Gambar Spesifikasi](img\KUK%201.1%20Gambar%20Spesifikasi.png)
 
 ## 2. Kebutuhan Proyek dan Matriks Pemilihan Tools
+
 ### A. Kebutuhan Proyek
-1.	Menjalankan aplikasi web PHP dan database secara lokal. Alternatif tools: XAMPP atau Laragon.
-2.	Menulis dan mengelola source code HTML, CSS, JavaScript, dan PHP. Alternatif tools: VS Code atau Notepad++.
-3.	Menjalankan JavaScript di luar browser. Alternatif tools: Node.js.
-4.	Mengelola library atau dependency PHP. Alternatif tools: Composer.
-5.	Mengelola versi source code dan kolaborasi tim. Alternatif tools: Git dan GitHub.
+
+1. Menjalankan aplikasi web PHP dan database secara lokal. Alternatif tools: XAMPP atau Laragon.
+2. Menulis dan mengelola source code HTML, CSS, JavaScript, dan PHP. Alternatif tools: VS Code atau Notepad++.
+3. Menjalankan JavaScript di luar browser. Alternatif tools: Node.js.
+4. Mengelola library atau dependency PHP. Alternatif tools: Composer.
+5. Mengelola versi source code dan kolaborasi tim. Alternatif tools: Git dan GitHub.
 
 ### B. Matriks Pemilihan Tools
+
 #### Web Server Lokal
-| Kriteria | XAMPP | Laragon |
-|-----------|------:|------:|
-| Kesesuaian OS peserta | 5 | 4 |
-| Kemudahan instalasi dan pemakaian | 4 | 5 |
-| Kebutuhan sumber daya | 4 | 5 |
-| Dukungan dokumentasi / komunitas | 5 | 4 |
-| Lisensi dan sumber unduhan resmi | 5 | 5 |
-| **Total** | **23** | **23** |
+
+| Kriteria                          |  XAMPP | Laragon |
+| --------------------------------- | -----: | ------: |
+| Kesesuaian OS peserta             |      5 |       4 |
+| Kemudahan instalasi dan pemakaian |      4 |       5 |
+| Kebutuhan sumber daya             |      4 |       5 |
+| Dukungan dokumentasi / komunitas  |      5 |       4 |
+| Lisensi dan sumber unduhan resmi  |      5 |       5 |
+| **Total**                         | **23** |  **23** |
 
 #### Code Editor
-| Kriteria | VS Code | Notepad++ |
-|-----------|------:|------:|
-| Kesesuaian OS peserta | 5 | 4 |
-| Kemudahan instalasi dan pemakaian | 5 | 5 |
-| Kebutuhan sumber daya | 4 | 5 |
-| Dukungan dokumentasi / komunitas | 5 | 4 |
-| Lisensi dan sumber unduhan resmi | 5 | 5 |
-| **Total** | **24** | **23** |
+
+| Kriteria                          | VS Code | Notepad++ |
+| --------------------------------- | ------: | --------: |
+| Kesesuaian OS peserta             |       5 |         4 |
+| Kemudahan instalasi dan pemakaian |       5 |         5 |
+| Kebutuhan sumber daya             |       4 |         5 |
+| Dukungan dokumentasi / komunitas  |       5 |         4 |
+| Lisensi dan sumber unduhan resmi  |       5 |         5 |
+| **Total**                         |  **24** |    **23** |
 
 #### Kesimpulan
+
 XAMPP dipilih sebagai server lokal karena mudah digunakan dan memiliki dokumentasi yang luas. Visual Studio Code dipilih sebagai code editor karena memiliki banyak ekstensi pendukung pengembangan web dan terminal terintegrasi.
 
 ## 3. Instalasi dan Konfigurasi Tools
@@ -55,11 +63,13 @@ XAMPP dipilih sebagai server lokal karena mudah digunakan dan memiliki dokumenta
 **Versi:** 1.142.0
 
 **Instalasi:**
+
 - Instalasi VS Code dengan opsi:
   - Add to PATH
   - Open with Code
 
 **Ekstensi:**
+
 - Live Server
 - PHP Intelephense
 - Prettier
@@ -67,6 +77,7 @@ XAMPP dipilih sebagai server lokal karena mudah digunakan dan memiliki dokumenta
 - Material Icon Theme
 
 **Konfigurasi:**
+
 - Auto Save: afterDelay
 - Format On Save: aktif
 - Tab Size: 2
@@ -83,9 +94,11 @@ Menambahkan folder VS Code ke Environment Variable PATH hingga perintah `code --
 ### XAMPP
 
 **Instalasi:**
+
 - Menggunakan XAMPP sebagai web server lokal.
 
 **Konfigurasi:**
+
 - Menjalankan Apache melalui XAMPP Control Panel.
 - Folder web ditempatkan pada:
 
@@ -106,9 +119,11 @@ Mengubah workspace dari Restricted Mode menjadi Trusted sehingga ekstensi dapat 
 **Versi:** 24.22.0
 
 **Instalasi:**
+
 - Menggunakan Node.js versi LTS.
 
 **Konfigurasi:**
+
 - Menjalankan script JavaScript melalui terminal menggunakan Node.js.
 
 **Kendala:**
@@ -139,6 +154,7 @@ Setelah itu npm dapat digunakan dengan normal.
 **Versi:** 2.10.3
 
 **Instalasi:**
+
 - Composer dihubungkan dengan PHP XAMPP.
 
 **Konfigurasi:**
@@ -160,9 +176,11 @@ composer -V
 **Versi Git:** 2.56.0.windows.2
 
 **Instalasi:**
+
 - Instalasi Git dengan pengaturan default.
 
 **Konfigurasi:**
+
 - Membuat repository GitHub:
   - portofolio-junior-web
 - Menghubungkan repository lokal dengan GitHub.
@@ -184,18 +202,19 @@ Repository berhasil di-push ke GitHub.
 
 ### Tabel Verifikasi Versi
 
-| Tools | Perintah | Versi yang Muncul | Status |
-|---------|---------|---------|---------|
-| Visual Studio Code | code --version | 1.142.0 | ✅ Berhasil |
-| PHP | php -v | 8.2.12 | ✅ Berhasil |
-| Node.js | node -v | 24.22.0 | ✅ Berhasil |
-| npm | npm -v | 11.19.1 | ✅ Berhasil |
-| Composer | composer -V | 2.10.3 | ✅ Berhasil |
-| Git | git --version | 2.56.0.windows.2 | ✅ Berhasil |
+| Tools              | Perintah       | Versi yang Muncul | Status      |
+| ------------------ | -------------- | ----------------- | ----------- |
+| Visual Studio Code | code --version | 1.142.0           | ✅ Berhasil |
+| PHP                | php -v         | 8.2.12            | ✅ Berhasil |
+| Node.js            | node -v        | 24.22.0           | ✅ Berhasil |
+| npm                | npm -v         | 11.19.1           | ✅ Berhasil |
+| Composer           | composer -V    | 2.10.3            | ✅ Berhasil |
+| Git                | git --version  | 2.56.0.windows.2  | ✅ Berhasil |
 
 ### Layanan Berjalan
 
 #### Apache (XAMPP)
+
 Status:
 
 ```text
@@ -246,6 +265,7 @@ Lingkungan pengembangan berhasil dikonfigurasi. Layanan Apache berjalan dengan n
 Script digunakan untuk menguji tampilan halaman web dan informasi browser.
 
 **Hasil:**
+
 - Halaman berhasil ditampilkan melalui Live Server.
 - Teks "Halo, Dunia Web!" tampil pada browser.
 - Informasi browser berhasil ditampilkan.
@@ -259,11 +279,11 @@ Script digunakan untuk menguji tampilan halaman web dan informasi browser.
 Script:
 
 ```javascript
-const os = require('os');
+const os = require("os");
 
-console.log('Node.js ' + process.version);
-console.log('OS: ' + os.type() + ' ' + os.release());
-console.log('Instalasi Node.js berhasil!');
+console.log("Node.js " + process.version);
+console.log("OS: " + os.type() + " " + os.release());
+console.log("Instalasi Node.js berhasil!");
 ```
 
 Perintah:
@@ -371,6 +391,7 @@ HTTP/1.1 404 Not Found
 ```
 
 ### Kesimpulan KUK 3.2
+
 - Teks "Instalasi Berhasil!" tampil
 - Versi PHP terbaca
 - Informasi Apache terbaca
@@ -378,3 +399,15 @@ HTTP/1.1 404 Not Found
 - Status 200 OK untuk `tes.php`
 - Status 200 OK untuk `index.html`
 - Status 404 Not Found untuk `tidak-ada.html`
+
+## Repository GitHub
+
+Tautan repositori:
+
+https://github.com/amribaros15/portofolio-junior-web
+
+Status:
+
+- Repository berhasil dibuat
+- Minimal 3 commit bermakna berhasil dibuat
+- Seluruh dokumen PBL Hari 1 berhasil diunggah
