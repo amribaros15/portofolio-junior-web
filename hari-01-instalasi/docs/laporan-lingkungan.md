@@ -16,7 +16,7 @@
 | Composer           | 2.10.3                                        |
 | Git                | 2.56.0.windows.2                              |
 
-![Gambar Spesifikasi](img\KUK%201.1%20Gambar%20Spesifikasi.png)
+![Gambar Spesifikasi](img/KUK%201.1%20Gambar%20Spesifikasi.png)
 
 ## 2. Kebutuhan Proyek dan Matriks Pemilihan Tools
 
