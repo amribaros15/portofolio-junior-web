@@ -1,0 +1,472 @@
+/* ===== Variabel ===== */
+/* Warna, ukuran, dan jarak utama website */
+
+:root {
+  --warna-utama: #00C91B;
+  --warna-gelap: #1f2937;
+  --warna-terang: #f9fafb;
+  --warna-abu: #6b7280;
+  --radius: 8px;
+  --jarak: 1rem;
+  --lebar-maks: 1100px;
+}
+
+/* ===== Reset ===== */
+/* Menghilangkan gaya bawaan browser */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Dasar Halaman ===== */
+/* Pengaturan font dan warna utama */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--warna-gelap);
+  background: var(--warna-terang);
+}
+
+/* ===== Gambar ===== */
+/* Membuat gambar responsif */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Link ===== */
+/* Tampilan tautan */
+
+a {
+  color: var(--warna-utama);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* ===== Layout Umum ===== */
+/* Kontainer utama halaman */
+
+.kontainer {
+  max-width: var(--lebar-maks);
+  margin: 0 auto;
+  padding: 0 var(--jarak);
+}
+
+/* ===== Section ===== */
+/* Jarak antar section */
+
+section {
+  padding: 3rem 0;
+}
+
+/* ===== Heading ===== */
+/* Judul halaman dan section */
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-bottom: var(--jarak);
+}
+
+h2 {
+  color: var(--warna-utama);
+}
+
+/* ===== Navbar Flexbox ===== */
+/* Navbar responsif menggunakan Flexbox */
+
+.situs-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--jarak);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+/* ===== Hero Section ===== */
+/* Banner utama landing page */
+
+.hero {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--warna-utama),
+    #008A13
+  );
+  color: #fff;
+  border-radius: var(--radius);
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: var(--warna-utama);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.hero a:hover {
+  text-decoration: none;
+}
+
+/* ===== Tentang Kami ===== */
+
+#tentang {
+  border-radius: var(--radius);
+}
+
+#tentang h2 {
+  margin-bottom: 1.5rem;
+}
+
+#tentang p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+#tentang h3 {
+  color: var(--warna-utama);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#tentang ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#tentang li {
+  margin-bottom: 0.5rem;
+}
+
+#tentang a {
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.visi-misi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.kotak-info {
+  background: #fff;
+
+  padding: 1.5rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.kotak-info h3 {
+  color: var(--warna-utama);
+  margin-bottom: 1rem;
+}
+
+.kotak-info ol {
+  padding-left: 1.5rem;
+}
+
+.kotak-info li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Properti Unggulan ===== */
+/* Kartu properti menggunakan CSS Grid */
+
+.grid-kartu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.kartu {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  min-height: 100px;
+}
+
+.kartu:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grid-kategori {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-kategori h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ===== Galeri Properti ===== */
+/* Menata gambar menggunakan CSS Grid */
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  padding: 1.5rem;
+
+  background: #fff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: var(--radius);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.galeri img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* ===== Listing Properti ===== */
+/* Tabel responsif untuk daftar properti */
+
+.tabel-bungkus {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+thead th {
+  background: var(--warna-utama);
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+tbody tr:hover {
+  background: #eefbf0;
+}
+
+/* ===== Form Kontak ===== */
+/* Form konsultasi properti */
+
+#kontak h2 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.teks-kontak {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+  text-align: center;
+  color: var(--warna-abu);
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0.75rem;
+
+  background: #fff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: var(--radius);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form p {
+  margin-bottom: 0.75rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.50rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font: inherit;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgba(0, 201, 27, 0.25);
+  border-color: var(--warna-utama);
+}
+
+button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--warna-utama);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Pemisah Section ===== */
+/* Memberi pembatas antar section */
+
+#properti::before,
+#listing::before,
+#kontak::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--warna-utama);
+  margin: 0 auto 3rem;
+  border-radius: 99px;
+}
+
+/* ===== Footer ===== */
+/* Informasi kontak dan copyright */
+
+footer {
+  margin-top: 4rem;
+  padding: 3rem 1rem;
+
+  background: #1f2937;
+  color: #fff;
+
+  text-align: center;
+
+  border-top: 4px solid var(--warna-utama);
+}
+
+footer p {
+  margin-bottom: 0.75rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: var(--warna-utama);
+  text-decoration: none;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 767px) {
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .visi-misi {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-kategori {
+    grid-template-columns: 1fr;
+  }
+
+  .galeri {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .grid-kategori {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
