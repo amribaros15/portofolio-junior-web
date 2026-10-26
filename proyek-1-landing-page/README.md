@@ -63,6 +63,10 @@ https://github.com/amribaros15/portofolio-junior-web/
 
 ![Desktop](/hari-03-css/img-03/capture-desktop.png)
 
+### Tampilan Tablet
+
+![Tablet](/hari-03-css/img-03/capture-tablet.png)
+
 ### Tampilan Mobile
 
 ![Mobile](/hari-03-css/img-03/capture-mobile.png)
@@ -82,3 +86,4 @@ proyek-1-landing-page/
 ## Pembuat
 
 Amri Eka Widayanto
+
