@@ -1,0 +1,12 @@
+let angka = 4821;
+let angkaAwal = angka;
+let jumlah = 0;
+
+while (angka > 0) {
+    jumlah += angka % 10;
+    angka = Math.floor(angka / 10);
+}
+
+console.log(`Angka: ${angkaAwal}`);
+console.log(`Jumlah digit: ${jumlah}`);
+

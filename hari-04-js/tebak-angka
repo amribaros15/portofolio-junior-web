@@ -1,0 +1,17 @@
+const rahasia = Math.floor(Math.random() * 100) + 1;
+
+let tebakan;
+
+do {
+    tebakan = Number(prompt("Tebak angka 1-100"));
+
+    if (tebakan < rahasia) {
+        console.log("Terlalu rendah");
+    } else if (tebakan > rahasia) {
+        console.log("Terlalu tinggi");
+    }
+
+} while (tebakan !== rahasia);
+
+console.log("Selamat, tebakan benar!");
+
