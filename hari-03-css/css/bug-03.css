@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  padding: 30px;
+}
+
+.kartu {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.teks {
+  color: blue;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,27 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.galat {
+  display: block;
+  margin-top: 0.25rem;
+  color: crimson;
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+

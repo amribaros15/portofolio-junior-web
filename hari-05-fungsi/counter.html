@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter</title>
+</head>
+<body>
+
+  <h2 id="angka">0</h2>
+
+  <button id="tambah">Tambah</button>
+  <button id="kurang">Kurang</button>
+  <button id="reset">Reset</button>
+
+  <script>
+    let hitung = 0;
+
+    const angka = document.getElementById('angka');
+
+    const perbarui = () => {
+      angka.textContent = hitung;
+    };
+
+    document.getElementById('tambah')
+      .addEventListener('click', () => {
+      hitung++;
+      perbarui();
+      });
+
+    document.getElementById('kurang')
+      .addEventListener('click', () => {
+      hitung--;
+      perbarui();
+      });
+
+    document.getElementById('reset')
+      .addEventListener('click', () => {
+      hitung = 0;
+      perbarui();
+    });
+  </script>
+
+</body>
+</html>

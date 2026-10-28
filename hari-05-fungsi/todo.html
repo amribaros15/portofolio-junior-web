@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <style>
+    .selesai {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+</head>
+<body>
+
+  <h1>To-Do List</h1>
+
+  <form id="form-tugas">
+    <label for="teks-tugas">Tugas baru</label>
+
+    <input
+      id="teks-tugas"
+      required
+    >
+
+    <button type="submit">
+      Tambah
+    </button>
+  </form>
+
+  <p>
+  Tugas tersisa:
+  <span id="jumlah-tugas">0</span>
+  </p>
+
+  <ul id="daftar-tugas"></ul>
+
+  <script>
+    const form =
+      document.getElementById('form-tugas');
+
+    const daftar =
+      document.getElementById('daftar-tugas');
+    
+    const jumlahTugas =
+      document.getElementById('jumlah-tugas');
+
+    function perbaruiJumlahTugas() {
+
+      const tersisa = 
+        daftar.querySelectorAll(
+          'li:not(.selesai)'
+        ).length;
+
+      jumlahTugas.textContent = tersisa;      
+    } 
+
+    form.addEventListener('submit', (event) => {
+
+      event.preventDefault();
+
+      const teks =
+        document
+          .getElementById('teks-tugas')
+          .value
+          .trim();
+      
+      if (teks === '') {
+        return;
+      }
+
+      if (teks.length > 80) {
+        alert('Maksimal 80 karakter.');
+        return;
+      }
+
+      const item =
+        document.createElement('li');
+
+      item.textContent = teks + ' ';
+
+      const selesai =
+        document.createElement('button');
+
+      selesai.type = 'button';
+      selesai.textContent = 'Selesai';
+
+      selesai.addEventListener('click', () => {
+        item.classList.toggle('selesai');
+        perbaruiJumlahTugas();
+      });
+
+      const hapus =
+        document.createElement('button');
+
+      hapus.type = 'button';
+      hapus.textContent = 'Hapus';
+
+      hapus.addEventListener('click', () => {
+      item.remove()
+      perbaruiJumlahTugas();
+      });
+
+      item.append(selesai);
+      item.append(hapus);
+      daftar.append(item);
+      perbaruiJumlahTugas();
+
+      form.reset();
+  });
+  </script>
+
+</body>
+</html>
