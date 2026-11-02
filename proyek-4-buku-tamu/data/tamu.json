@@ -1,0 +1,86 @@
+[
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "Junior Web Programmer",
+        "id": 1,
+        "waktu": "2026-11-02 02:07:29"
+    },
+    {
+        "nama": "Badru",
+        "email": "badru@email.com",
+        "pesan": "Kementerian Perindustrian Republik Indonesia",
+        "id": 2,
+        "waktu": "2026-11-02 02:09:16"
+    },
+    {
+        "nama": "Haura",
+        "email": "haura@email.com",
+        "pesan": "Goodigitaledu",
+        "id": 3,
+        "waktu": "2026-11-02 02:09:36"
+    },
+    {
+        "nama": "Abdul",
+        "email": "abdul@email.com",
+        "pesan": "Sekolah Bisnis Ritel Indonesia",
+        "id": 4,
+        "waktu": "2026-11-02 02:28:50"
+    },
+    {
+        "nama": "Tamam",
+        "email": "tamam@email.com",
+        "pesan": "Balai Diklat Industri",
+        "id": 5,
+        "waktu": "2026-11-02 02:29:24"
+    },
+    {
+        "nama": "Aina",
+        "email": "aina@email.com",
+        "pesan": "Syntax error",
+        "id": 6,
+        "waktu": "2026-11-02 02:29:55"
+    },
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "Debugging sistematis",
+        "id": 7,
+        "waktu": "2026-11-02 02:30:36"
+    },
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "bug-keranjang.js",
+        "id": 8,
+        "waktu": "2026-11-02 02:44:01"
+    },
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "Logic\/Data",
+        "id": 9,
+        "waktu": "2026-11-02 02:47:34"
+    },
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "daftar.length",
+        "id": 10,
+        "waktu": "2026-11-02 02:48:23"
+    },
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "Runtime error",
+        "id": 11,
+        "waktu": "2026-11-02 02:49:02"
+    },
+    {
+        "nama": "Amri",
+        "email": "amri@email.com",
+        "pesan": "TypeError",
+        "id": 13,
+        "waktu": "2026-11-02 02:50:27"
+    }
+]
