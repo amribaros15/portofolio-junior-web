@@ -1,6 +1,6 @@
 var keranjang = [
     { id: 1, barang: 'T-shirt', harga: 80000, banyak: 2 },
-    { id: 2, barang: 'Jeans', harga: 90000, banyak: 1 }
+    { id: 2, barang: 'Jeans', harga: 80000, banyak: 2 }
 ];
 
 function hitungTotal(keranjang) {

@@ -1,6 +1,6 @@
 # Hello World NodeJS
 
-Program sederhana menggunakan NodeJS yang menampilkan teks hello world pada console.
+Program sederhana menggunakan NodeJS yang menampilkan teks hello Solo pada console.
 
 ## Menjalankan Program
 

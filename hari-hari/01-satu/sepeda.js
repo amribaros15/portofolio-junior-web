@@ -6,6 +6,6 @@ function Sepeda(jariJari) {
     };
 }
 
-var sepeda = new Sepeda(35);
+var sepeda = new Sepeda(25);
 
 console.log("Diameter roda: " + sepeda.diameter() + " cm");

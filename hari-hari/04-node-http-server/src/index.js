@@ -19,7 +19,7 @@ const server = http.createServer((request, response) => {
             'Content-Type': 'text/plain'
         });
 
-        response.end('hello world');
+        response.end('hello Solo');
         return;
     }
 

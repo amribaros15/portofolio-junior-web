@@ -1,5 +1,5 @@
 let seven = 7;
-let three = 3;
+let three = 5;
 
 let total = seven + three;
 
